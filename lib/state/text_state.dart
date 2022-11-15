@@ -16,7 +16,7 @@ class TextState extends StateNotifier<dynamic> {
     // _ref.read()と書いて、firebaseProviderを呼び出す
     final ref = await _ref
         .read(firebaseProvider)
-        .collection('users')
+        .collection('memo')
         .add({'text': text});
   }
 }
